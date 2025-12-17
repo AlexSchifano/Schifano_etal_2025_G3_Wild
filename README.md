@@ -52,15 +52,37 @@ Those scripts are essentially in R and include all analysis done on the dataset 
 
 ## DATA ANALYSIS SCRIPTS ##
 
+*R_CUB* --> Contains our Codon Usage Bias (CUB) analyses.
 
+*R_Contaminated_Previous.R* --> Used on the same data set but including lines that were removed in *S1_get_BAMS_MtDNA_CeNDR.sh*. Used to detect lines with a high number of mutations shared with other lines and in similar heteroplasmic frequencies.
 
+*R_Count_S_NS_Sites.R* --> Counts the number of Syn. and Nonsyn. positions in the reference genome of *C. elegans*
 
+*R_DOR_Correlation,R* --> Contains the analysis to investigate a possible correlation of the Distance to the Origin of Replication (DOR) on mutation count.
 
+*R_Heteroplasmic_Freqs.R* --> Script to make violin plots of variant frequencies (Fig. 9)
 
+*R_MKT.R* --> MacDonald Kreitman test between wild strains and *C. brenneri*
 
+*R_MutProp_TsTv.R* --> Computes mutation proportion (Fig. 2) and *Ts/Tv* (Fig. 3) 
 
+*R_Mut_Bias_Early_Gene.R* --> Analysis for mutation bias and AT-content bias close to genes ends (Fig. 7)
 
+*R_Mut_Freq.R* --> Mutation frequencies per gene, including Nsyn and Syn mutations frequencies and grouped per ETC Complex (Fig. 4 and 5)
 
+*R_Mut_table.R* --> Compiles the mutation tables produced in the DATA_PRODUCTION_SCRIPTS (mutations between reconstructed sequences and variants called from reconstructed ancestors to wild isolates BAM files)
+
+*R_Mutation_Spectr.R* --> Produces the various mutations spectra, including from previous studies and normalising based on base composition.
+
+*R_Neighbor_effct.R* --> Analysis of the correlation between directly neighbouring nucleotides and mutations (Fig. 6)
+
+*R_Small_INDEL.R* --> Analysis of small INDEL hotspots 
+
+*R_Waneka_Table.R* --> Reformating of data from Waneka et al., 2021 (https://doi.org/10.1093/genetics/iyab116)
+
+*R_list_isotypes.R* --> Makes a clean list of isotypes and mitotypes which include them
+
+*R_FUNCTIONS.R* --> Various functions created for this project that are used here and there in the scripts
 
 
 
